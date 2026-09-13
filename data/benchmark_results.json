@@ -1,0 +1,105 @@
+{
+  "Trivial Baseline (Static Rule)": {
+    "intent_metrics": {
+      "accuracy": 0.3333,
+      "macro_f1": 0.1667,
+      "micro_f1": 0.3333,
+      "macro_precision": 0.1111,
+      "macro_recall": 0.3333
+    },
+    "escalation_metrics": {
+      "accuracy": 1.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0
+    },
+    "reply_rouge_l": 0.1535,
+    "keyword_match_rate": 0.2857,
+    "llm_judge_score": 2.33,
+    "judge_agreement": {}
+  },
+  "Simple Baseline (Zero-Shot)": {
+    "intent_metrics": {
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "micro_f1": 1.0,
+      "macro_precision": 1.0,
+      "macro_recall": 1.0
+    },
+    "escalation_metrics": {
+      "accuracy": 1.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0
+    },
+    "reply_rouge_l": 0.3277,
+    "keyword_match_rate": 0.2857,
+    "llm_judge_score": 2.67,
+    "judge_agreement": {}
+  },
+  "Proposed Agent (@AppleSupport RAG)": {
+    "intent_metrics": {
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "micro_f1": 1.0,
+      "macro_precision": 1.0,
+      "macro_recall": 1.0
+    },
+    "escalation_metrics": {
+      "accuracy": 1.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0
+    },
+    "reply_rouge_l": 0.2309,
+    "keyword_match_rate": 0.2857,
+    "llm_judge_score": 4.0,
+    "judge_agreement": {
+      "num_samples": 3,
+      "exact_agreement": 0.0,
+      "adjacent_agreement_pm1": 0.6667,
+      "cohen_kappa_unweighted": -0.5,
+      "cohen_kappa_quadratic": -0.5,
+      "pearson_correlation": -0.5,
+      "mean_human_score": 4.0,
+      "mean_judge_score": 4.0,
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      ]
+    }
+  }
+}
